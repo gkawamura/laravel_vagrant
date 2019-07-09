@@ -1,0 +1,9 @@
+- hosts: localhost
+  become: true
+  user: vagrant
+  roles:
+    - epel
+    - httpd
+    - remi
+    - php
+    - composer

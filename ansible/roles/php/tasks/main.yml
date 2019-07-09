@@ -1,0 +1,13 @@
+- name: Install php
+  yum:
+    name={{ item }} enablerepo=remi-php73
+    state=installed
+  with_items:
+    - php
+    - php-devel
+    - php-mbstring
+    - php-pdo
+    - php-xml
+    - php-zip
+    - php-mysqlnd
+    - libpng-devel
